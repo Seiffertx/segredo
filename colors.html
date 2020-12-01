@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cores</title>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('#hello').style.color = this.value;
+                }
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Olá</h1>
+        <select>
+            <option value="black">Preto</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+        </select>
+    </body>
+</html>
